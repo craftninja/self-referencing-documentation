@@ -23,7 +23,7 @@ describe 'Self-referencing-documentation' do
   it 'allows user to look up words, return a def and urls of related words' do
     self_ref_doc = SelfRefDoc.new('word', @dictionary)
     actual = self_ref_doc.define
-    expected = { definition: "a collection of letters", see_also: [ "//example.com/letter", "//example.com/collection" ] }
+    expected = {definition: "a collection of letters", see_also: ["//example.com/collection", "//example.com/letter"]}
     expect(actual).to eq(expected)
   end
 
